@@ -38,18 +38,17 @@ button {
 }
 
 .banner {
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
     margin-top: 5px;
     height: 300px;
 }
 
 .thumbnail-container {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 .thumbnail {
     display: inline-block;
-    width: 10%;
+    width: 10%
 }
   
