@@ -37,4 +37,19 @@ button {
     background-color: darkslategray;
 }
 
+.banner {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5px;
+    height: 300px;
+}
+
+.thumbnail-container {
+    width: 80%;
+    margin-left: 10%;
+}
+.thumbnail {
+    display: inline-block;
+    width: 10%;
+}
   
