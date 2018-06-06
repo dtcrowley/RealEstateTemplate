@@ -6,6 +6,10 @@
 .nav-wrapper {
     background: #009cbd ;
 }
+
+.company-logo {
+    height: 50px;
+}
 button {
     background: lightblue;
     width: 24%;
