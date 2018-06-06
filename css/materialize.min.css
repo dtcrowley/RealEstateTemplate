@@ -9,6 +9,7 @@
 button {
     background: lightblue;
     width: 24%;
+    margin-left: 1%;
     height: 50px;
     color: black !important;
     display: inline-block;
@@ -31,6 +32,14 @@ button {
 
 .biocard {
     display: inline-flex;
+}
+
+.card-image {
+    height: 100%;
+}
+
+.responsive-img {
+    height: 100% !important;
 }
 
 .page-footer {
