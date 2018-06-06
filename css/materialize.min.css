@@ -4,7 +4,7 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 .nav-wrapper {
-    background: darkslategray;
+    background: #009cbd ;
 }
 button {
     background: lightblue;
@@ -34,7 +34,7 @@ button {
 }
 
 .page-footer {
-    background-color: darkslategray;
+    background-color: #009cbd ;
 }
 
 .banner {
