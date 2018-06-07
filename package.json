@@ -1,0 +1,27 @@
+{
+  "name": "realestatetemplate",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <a href=\"http://materializecss.com/\">     <img src=\"http://materializecss.com/res/materialize.svg\" width=\"150\">   </a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtcrowley/RealEstateTemplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtcrowley/RealEstateTemplate/issues"
+  },
+  "homepage": "https://github.com/dtcrowley/RealEstateTemplate#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0",
+    "sendgrid": "^5.2.3",
+    "server": "^1.0.18"
+  }
+}
