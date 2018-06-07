@@ -15,7 +15,7 @@ button {
     width: 24%;
     margin-left: 1%;
     height: 50px;
-    color: black !important;
+    color: white !important;
     display: inline-block;
 }
 
@@ -74,4 +74,19 @@ button {
     width: 80%;
     margin-left: 10%;
 }
+
+.slides {
+    width: 66%;
+    height: 66%;
+    margin-left: 17%;
+}
+
+/* .arrows {
+    z-index: 1;
+} */
+
+
+
+
+
   

@@ -28,7 +28,9 @@ $(document).ready(function(){
 $('.modal').modal();
 $('.slider').slider({
   full_width: true,
+  indicators: false
 });
+
 $('.next').click(function() {
   $('.slider').slider('next');
 });
