@@ -4,14 +4,14 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 .nav-wrapper {
-    background: #009cbd ;
+    background: white;
 }
 
 .company-logo {
     height: 50px;
 }
 button {
-    background: lightblue;
+    background:  #009cbd;
     width: 24%;
     margin-left: 1%;
     height: 50px;
