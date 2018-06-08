@@ -4,18 +4,18 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 .nav-wrapper {
-    background: #009cbd ;
+    background: white;
 }
 
 .company-logo {
     height: 50px;
 }
 button {
-    background: lightblue;
+    background:  #009cbd;
     width: 24%;
     margin-left: 1%;
     height: 50px;
-    color: black !important;
+    color: white !important;
     display: inline-block;
 }
 
@@ -66,12 +66,26 @@ button {
 }
 
 .floorplan-banner {
-    width: 100%;
-    height: 300px;
-}
-
-.floorplan-image {
     width: 80%;
+    margin-top: 5px;
+    height: 400px;
     margin-left: 10%;
 }
+
+.slides {
+    width: 66%;
+    height: 66%;
+    margin-left: 17%;
+}
+
+
+
+/* .arrows {
+    z-index: 1;
+} */
+
+
+
+
+
   

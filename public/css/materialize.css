@@ -28,6 +28,10 @@
   color: #f8c1c3 !important;
 }
 
+.indicators {
+  color: white !important;
+}
+
 .materialize-red.lighten-3 {
   background-color: #f3989b !important;
 }
@@ -8266,7 +8270,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 }
 
 .slider.fullscreen ul.indicators {
-  z-index: 2;
+  z-index: -1;
   bottom: 30px;
 }
 
@@ -8320,7 +8324,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   margin: 0;
 }
 
-.slider .indicators .indicator-item {
+/* .slider {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -8331,7 +8335,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   border-radius: 50%;
-}
+} */
 
 .slider .indicators .indicator-item.active {
   background-color: #4CAF50;
