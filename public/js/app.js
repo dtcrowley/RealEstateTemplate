@@ -25,6 +25,7 @@
 
 $(document).ready(function(){
   // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+$('.email-modal').hide();
 $('.modal').modal();
 $('.slider').slider({
   full_width: true,
@@ -39,6 +40,7 @@ $('.prev').click(function() {
 });
 
 $('.email-modal-trigger').click(function() {
+  $('.email-modal').show();
   $('.email-modal').modal();
 })
 });
