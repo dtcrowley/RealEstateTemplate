@@ -36,6 +36,7 @@ button {
 
 .biocard {
     display: inline-flex;
+    /* height: 175px !important; */
 }
 
 .card-image {
@@ -78,6 +79,13 @@ button {
     margin-left: 17%;
 }
 
+.agent-img {
+    height: 175px !important;
+}
+
+.email-button {
+    width: 50%;
+}
 
 
 /* .arrows {
