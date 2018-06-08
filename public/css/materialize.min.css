@@ -3,6 +3,9 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+ body {
+     font-family: 'Lato', sans-serif;
+ }
 .nav-wrapper {
     background: white;
 }
