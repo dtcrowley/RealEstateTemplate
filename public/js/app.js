@@ -37,4 +37,8 @@ $('.next').click(function() {
 $('.prev').click(function() {
   $('.slider').slider('prev');
 });
+
+$('.email-modal-trigger').click(function() {
+  $('.email-modal').modal();
+})
 });
