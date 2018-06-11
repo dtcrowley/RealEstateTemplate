@@ -90,10 +90,19 @@ button {
     width: 50%;
 }
 
+.modal-image {
+    width: 100%;
+}
 
+.gallery-thumb {
+    height: 100px;
+    margin-top: 5px;
+}
 /* .arrows {
     z-index: 1;
 } */
+/* max-width: 760px;
+@media screen  */
 
 
 
