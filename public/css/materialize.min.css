@@ -85,7 +85,7 @@ body {
 }
 
 .agent-img {
-    height: 175px !important;
+    height: 100% !important;
 }
 
 .email-button {
