@@ -46,16 +46,17 @@
                 <!-- Entry Form -->
                 <form class="col s12 m6">
                     <label for="name" required>Name</label>
-                    <input class="form-control" placeholder="Name" id="name-input" type="text">  
+                    <input class="form-control validate" placeholder="Name" id="name-input" type="text" required>  
                     
                     <div class="form-group">
                     <label for="emailAddress" required>Email</label>
-                    <input class="form-control" placeholder="me@example.com" id="email-input" type="email">
+                    <input class="form-control validate" placeholder="me@example.com" id="email-input" type="email" required>
+                    <span class="helper-text" data-error="Please Enter Valid Email Address" data-success="right"></span>
                     </div>
                     
                     <div class="form-group">
                     <label for="comments-input" required>Questions or Comments</label>
-                    <input class="form-control" placeholder="Interested? Let us know!" id="comment-input" type="text" style="height: 100px">
+                    <input class="form-control validate" placeholder="Interested? Let us know!" id="comment-input" type="text" style="height: 100px" required>
                     </div>
                     <button class="btn btn-primary" id="add-to-firebase" style= "background-color: #009cbd; width: 33%;" type="submit">Send</button>
                 </form>
