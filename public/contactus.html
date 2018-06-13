@@ -51,20 +51,21 @@
                     <div class="form-group">
                     <label for="emailAddress" style="font-weight: bolder;">Email</label>
                     <input class="form-control validate" placeholder="me@example.com" name="email" id="email-input" type="email" required>
-                    <span class="helper-text" data-error="Please Enter Valid Email Address" data-success="right"></span>
+                    <!-- <span class="helper-text" data-error="Please Enter Valid Email Address" data-success="right"></span> -->
                     </div>
-
+                    
                     <div class="form-group">
                     <label for="phone" style="font-weight: bolder;">Phone (Optional)</label>
-                    <input class="form-control validate" placeholder="555-555-5555" name="phone" id="phone-input" type="number" required>
+                    <input class="form-control validate" placeholder="555-555-5555" name="phone" id="phone-input" type="number">
                     </div>                    
                     
                     <div class="form-group">
                     <label for="comments-input" style="font-weight: bolder;">Questions or Comments</label>
                     <input class="form-control validate" placeholder="Interested? Let us know!" name="comment" id="comment-input" type="text" style="height: 100px" required>
                     </div>
-                    <!-- <input type="submit" class="contact-btn"> -->
-                    <button class="btn btn-primary" id="add-to-firebase" style= "background-color: #009cbd; width: 33%;" type="submit">Send</button>
+                    
+                    <input type="submit" class="contact-btn">
+                    <!-- <button class="btn btn-primary" id="add-to-firebase" style= "background-color: #009cbd; width: 33%;" type="submit">Send</button> -->
                 </form>
                 <div id="thank-you-message" style="text-align: center;"></div>
                 <br><br>

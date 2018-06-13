@@ -1,5 +1,32 @@
 $(document).ready(function(){
     $("#thank-you-message").hide();
+    $('form[name=registration').validate({
+        // Specify validation rules
+        rules: {
+            // The key name on the left side is the name attribute
+            // of an input field. Validation rules are defined
+            // on the right side
+            name: "required",
+            email: {
+            required: true,
+            // Specify that email should be validated
+            // by the built-in "email" rule
+            email: true
+            },
+            phone: {
+                required: true,
+                integer: true,
+                minLength: 10
+            },
+            comment:"required"
+        },
+        // Specify validation error messages
+        messages: {
+            name: "Please enter your name",
+            email: "Invalid email address!",
+            comment:"Please enter your question or comment"
+        }
+    });
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyB2tAVWn5WwWOSG53Qy6IQ05udVUi2NnKI",
@@ -48,27 +75,6 @@ $(document).ready(function(){
             phone = $("#phone-input").val("");
             comment = $("#comment-input").val("");
         });
-        // $('form[name=registration').validate({
-        //     // Specify validation rules
-        //     rules: {
-        //         // The key name on the left side is the name attribute
-        //         // of an input field. Validation rules are defined
-        //         // on the right side
-        //         name: "required",
-        //         email: {
-        //         required: true,
-        //         // Specify that email should be validated
-        //         // by the built-in "email" rule
-        //         email: true
-        //         },
-        //         comment:"required"
-        //     },
-        //     // Specify validation error messages
-        //     messages: {
-        //         name: "Please enter your name",
-        //         email: "Please enter a valid email address",
-        //         comment:"Please enter your question or comment"
-        //     }
-        // });
+        
         $(".character-counter").hide();
     });
