@@ -21,6 +21,7 @@
     "@sendgrid/mail": "^6.2.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "jquery-validation": "^1.17.0",
     "morgan": "^1.9.0",
     "sendgrid": "^5.2.3",
     "server": "^1.0.18"
