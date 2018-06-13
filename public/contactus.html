@@ -17,6 +17,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
    
     
     <title>Real Estate Template</title>
@@ -35,29 +37,34 @@
         <a href="details.html"><button class="col s4 m4">Details</button></a>
         <a href="contactus.html"><button class="col s4 m4">Contact Us</button></a>
     </div>
+    <br><br>
     <!-- Contact Us -->
     <div class= "container" id="form-wrapper">
-        <div class="panel panel-primary">
+            <div id="thank-you-message" style="text-align: center;"></div>
+        <div class="panel panel-primary s12 m6">
             <div class="panel-body">
                 <!-- Entry Form -->
-                <form method="POST" action="http://serverlessforms.com/api/form/8dacaba4-f055-54cc-b5bd-3d543e006435/form-response">
+                <form class="col s12 m6">
                     <label for="name-input" required>Name</label>
-                    <input class="form-control" id="name-input" type="text">  
+                    <input class="form-control" placeholder="Name" id="name-input" type="text">  
                     
                     <div class="form-group">
                     <label for="email-input" required>Email</label>
-                    <input class="form-control" id="email-input" type="text">
+                    <input class="form-control" placeholder="me@example.com" id="email-input" type="text">
                     </div>
                     
                     <div class="form-group">
                     <label for="comments-input" required>Questions or Comments</label>
-                    <input class="form-control" id="comment-input" type="text" style="height: 100px">
+                    <input class="form-control" placeholder="Interested? Let us know!" id="comment-input" type="text" style="height: 100px">
                     </div>
-                    <button class="btn" id="add-to-firebase" type="submit">Submit</button>
-                
+
+                    <button class="btn btn-primary" id="add-to-firebase" style= "background-color: #009cbd; width: 33%;" type="submit">Send</button>
+
                 </form>
+                <br><br>
             </div>
         </div>
+        
     </div>
 
     <div class="container">
@@ -71,4 +78,5 @@
     
 </body>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
 </html>
