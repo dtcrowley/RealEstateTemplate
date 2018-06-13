@@ -16,41 +16,22 @@ $(document).ready(function(){
     // Initial Values
     var name = "";
     var email = "";
+    var phone = "";
     var comment = "";
     
     $("#add-to-firebase").on("click", function() {
         // Don't refresh the page!
         event.preventDefault();
-        $('form[name=registration').validate({
-            // Specify validation rules
-            rules: {
-                // The key name on the left side is the name attribute
-                // of an input field. Validation rules are defined
-                // on the right side
-                name: "required",
-                email: {
-                required: true,
-                // Specify that email should be validated
-                // by the built-in "email" rule
-                email: true
-                },
-                comment:"required"
-            },
-            // Specify validation error messages
-            messages: {
-                name: "Please enter your name",
-                email: "Please enter a valid email address",
-                comment:"Please enter your question or comment"
-            }
-        });
         //Providing data to Firebase
         name = $("#name-input").val().trim();
         email = $("#email-input").val().trim();
+        phone = $("#phone-input").val().trim();
         comment = $("#comment-input").val().trim();
 
         var userComment = {
             name: name,
             email: email,
+            phone: phone,
             comment: comment,
         };
             console.log(name, email, comment);
@@ -58,17 +39,36 @@ $(document).ready(function(){
             database.ref().push(userComment);
     
             // var postSubmit = $("#form-wrapper").hide();
-            $("#thank-you-message").hide();
-            var thankYou = $("<h5>").text("Thanks for reaching out! We will respond to you as soon as possible.");
+            var thankYou = $("<h5>").text("Thank you for your interest! We will respond to you as soon as possible.");
             $("#thank-you-message").append(thankYou)
             $("#thank-you-message").show();
     
             name = $("#name-input").val("");
             email = $("#email-input").val("");
+            phone = $("#phone-input").val("");
             comment = $("#comment-input").val("");
         });
+        // $('form[name=registration').validate({
+        //     // Specify validation rules
+        //     rules: {
+        //         // The key name on the left side is the name attribute
+        //         // of an input field. Validation rules are defined
+        //         // on the right side
+        //         name: "required",
+        //         email: {
+        //         required: true,
+        //         // Specify that email should be validated
+        //         // by the built-in "email" rule
+        //         email: true
+        //         },
+        //         comment:"required"
+        //     },
+        //     // Specify validation error messages
+        //     messages: {
+        //         name: "Please enter your name",
+        //         email: "Please enter a valid email address",
+        //         comment:"Please enter your question or comment"
+        //     }
+        // });
         $(".character-counter").hide();
     });
-//     // Capture Button Click
-    
-// });
