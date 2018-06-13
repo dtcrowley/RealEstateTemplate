@@ -50,7 +50,7 @@
                     
                     <div class="form-group">
                     <label for="emailAddress" required>Email</label>
-                    <input class="form-control validate" placeholder="me@example.com" id="email-input" type="email" required>
+                    <input class="form-control validate" placeholder="me@example.com" id="email-input" type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                     <span class="helper-text" data-error="Please Enter Valid Email Address" data-success="right"></span>
                     </div>
                     
@@ -58,6 +58,7 @@
                     <label for="comments-input" required>Questions or Comments</label>
                     <input class="form-control validate" placeholder="Interested? Let us know!" id="comment-input" type="text" style="height: 100px" required>
                     </div>
+                    <input type="submit">
                     <button class="btn btn-primary" id="add-to-firebase" style= "background-color: #009cbd; width: 33%;" type="submit">Send</button>
                 </form>
                 <br><br>
