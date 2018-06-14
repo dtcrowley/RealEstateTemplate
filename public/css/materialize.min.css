@@ -92,15 +92,22 @@ body {
     width: 50%;
 }
 
+.modal {
+    /* width: auto; */
+    height: auto;
+}
+
 .modal-image {
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    /* overflow: inherit !important; */
 }
 
 .modal-content {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    /* overflow: inherit !important; */
 }
 
 .gallery-thumb {
