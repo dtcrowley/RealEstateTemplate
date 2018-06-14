@@ -53,8 +53,8 @@ app.post('/send', (req, res) => {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-          user: 'jeasleydevtest@gmail.com', // generated ethereal user
-          pass: 'devtest1' // generated ethereal password
+          user: 'propertycontact2018@gmail.com', // generated ethereal user
+          pass: 'r3a1estate' // generated ethereal password
       },
       tls:{
         rejectUnauthorized:false
@@ -63,8 +63,8 @@ app.post('/send', (req, res) => {
   
   // setup email data with unicode symbols
   let mailOptions = {
-      from: '"841 19th st contact" <jeasleydevtest@gmail.com>', // sender address
-      to: 'icedmammoth@yahoo.com', // list of receivers
+      from: '"841 19th st contact" <propertycontact2018@gmail.com>', // sender address
+      to: 'icedmammoth@yahoo.com, crowleyd1988@gmail.com', // list of receivers
       subject: 'I am interested in the property at 841 19th st', // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body
@@ -78,7 +78,7 @@ app.post('/send', (req, res) => {
       console.log('Message sent: %s', info.messageId);
       console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
   
-      res.redirect('/index2.html');
+      res.redirect('/index.html');
   });
   });
 
