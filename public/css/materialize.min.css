@@ -18,8 +18,12 @@ body {
 #links {
     background:  #009cbd;
     height: 50px;
+    width: 30%;
+    margin-top: 10px;
+    margin-right: 1%;
     color: white !important;
     display: inline-block;
+    border: white !important;
 }
 
 .button-holder {
